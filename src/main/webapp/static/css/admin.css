@@ -1,0 +1,75 @@
+#cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 1;
+	display: none;
+}
+
+.iframeBobay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	width: auto;
+	margin-left: 15rem;
+	margin-top: 20rem;
+}
+
+.iframeTitle{
+	width: 55rem;
+	height: 2rem;
+	line-height: 31px;
+	display: block;
+	color: red;
+	background-color: #9bd3fa;
+}
+
+.iframeTitleClose{
+	width: 18px;
+	height: 18px;
+	display: block;
+	margin-top: 5px;
+	cursor: pointer;
+	margin-left: 52rem;
+}
+
+.iframeInfo{
+	width: 878px;
+	display: block;
+	border: solid 1px #e1e1e1;
+	border-top: none;
+	padding: 10px 0px;
+	background-color: #fff;
+}
+
+.scene{
+	background-color: #83e5f5;
+	margin-top: 1rem;
+	border-top-width: 0.4rem;
+	border-bottom-width: 0.4rem;
+}
+
+select{
+	width: 10rem;
+	height: 1.8rem;
+	margin-bottom: 0.3rem;
+}
+input{
+	border-style: solid;
+	border-radius: 3px;
+	width: 12rem;
+	height: 1.5rem;
+	font-size: 0.9rem;
+	margin-bottom: 0.3rem;
+}
+button{
+	border-radius: 5px;
+	width: 14rem;
+	height: 1.8rem;
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+}

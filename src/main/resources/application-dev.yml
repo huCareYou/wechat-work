@@ -1,0 +1,45 @@
+spring:
+  #SpringBoot整合redis配置
+  redis:
+    #超时时间，毫秒
+    timeout: 5000
+    #出现异常最大重试次数
+    maxAttempts: 5
+    cluster:
+      max-redirects: 5
+      nodes: 10.30.37.12:6379,10.30.37.12:6380,10.30.37.12:6381,10.30.11.15:6379,10.30.11.15:6380,10.30.11.15:6381
+    #通过jedis进行连接池管理
+    jedis:
+      pool:
+        #最大连接数
+        max-active: 10
+        #最大空闲连接数
+        max-idle: 8
+        #最小空闲连接数
+        min-idle: 8
+        #最大阻塞等待时间，负值为无限制
+        max-wait: -1
+#日志配置
+logging:
+  config: classpath:logback-spring-dev.xml
+
+#企业微信参数
+wechat-work:
+  #测试企业id
+  #qiyeId: ww9343cbb4611df33d
+  #炎黄企业id
+  qiyeId: ww63b053d6e2afc6dc
+  #群发应用Id
+  groupSendAgentId: 1000002
+  #测试群发应用秘钥
+  #groupSendSecret: x83ccYVIMSbPN7Qu3lNHVFWfHQy-p7To4H2zAQYVJ74
+  #炎黄推送应用
+  groupSendSecret: _bf9PI6DAdtMw4LsbnIugSXPSmt9IBfRSQvNLT736AQ
+  #获取应用token接口地址
+  getToken: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+  #应用消息接口地址
+  groupSend: https://qyapi.weixin.qq.com/cgi-bin/message/send
+
+
+
+
